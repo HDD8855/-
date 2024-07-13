@@ -1,0 +1,441 @@
+html, body{
+  padding: 0;
+  margin: 0;
+}
+.button {
+  text-align: center;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  color: skyblue;
+  background-color: #ddd;
+  border: none;
+  /* 下面这个是用来控制圆角的 */
+  border-radius: 50px;
+}
+/* 定义动画 */
+@keyframes moveRight {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+/* 顶部 */
+#top {
+  background-image: linear-gradient(rgb(0, 61, 86) -10%, rgba(0, 127, 144, 0.74) 100%);
+  width: 100%;
+  height: 800px;
+}
+#ico {
+  position: relative;
+  top: 35px;
+  left: 5%;
+  width: 170px;
+  height: 60px;
+}
+#menu {
+  position: relative;
+  top: 30px;
+  margin-right: 5%;
+  float: right;
+}
+#menu ul{
+  list-style: none; /* 移除默认列表样式 */
+  padding: 0; /* 移除默认内边距 */
+  margin: 0; /* 移除默认外边距 */
+  display: flex; /* 使用Flexbox布局 */
+}
+#menu ul li{
+  display: inline-block;
+  margin-left: 60px;
+}
+#menu li .menu {
+  position: relative;
+  top: 40%;
+  color: white;
+  text-decoration: none;
+  font-size: 100%;
+}
+#menu li .menu:hover {
+  color: skyblue;
+}
+#login {
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 22px;
+  font-size: 18px;
+  color: skyblue;
+  border: 5px solid skyblue;
+  background-color: #ddd;
+  /* 下面这个是用来控制圆角的 */
+  border-radius: 50px;
+}
+#login:hover {
+  color: #ddd;
+  background-color: skyblue;
+  border: 5px solid white;
+}
+/* 登录注册 */
+#loginbg {
+  display: none;
+  background-color: rgba(128, 128, 128, 0.5);
+  position: fixed; /* 使div固定位置 */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw; 
+  height: 100vh; 
+  z-index: 998;
+}
+.loginbox {
+  display: none;
+  text-align: center;
+  background-color: white;
+  width: 60%;
+  height: 60%;
+  position: fixed;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  border-radius: 50px;
+  padding: 10px;
+}
+.loginbox form {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  width: 80%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+}
+.loginbox h2 {
+  text-align: left;
+  font-size: 30px;
+  color: black;
+}
+.loginwrite {
+  font-size: 20px;
+  text-align: center;
+}
+.loginwrite input {
+  margin: 10px;
+  width: 300px;
+  height: 50px;
+  padding: 5px 10px 5px 10px;
+  font-size: 18px;
+  color: black;
+  border: 3px solid rgb(162, 162, 162);
+  outline: none;
+  background-color: white;
+  /* 下面这个是用来控制圆角的 */
+  border-radius: 10px;
+}
+.loginwrite input:focus {
+  border: 3px solid skyblue;
+  box-shadow: 0 0 5px skyblue, /* 主阴影 */
+              0 0 2px 2px skyblue; /* 扩散阴影 */
+  outline: none;
+}
+.loginwrite input::placeholder {
+  color: rgb(162, 162, 162);
+}
+#login_go {
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 28%;
+  width: 300px;
+  height: 50px;
+  padding: 5px 10px 5px 10px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  outline: none;
+  background-color: skyblue;
+  /* 下面这个是用来控制圆角的 */
+  border-radius: 10px;
+}
+.agree {
+  font-size: 15px;
+  color: rgb(106, 106, 106);
+}
+.close {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  font-size: 400%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(169, 165, 165);
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border-radius: 90px;
+}
+/* 主要文字 */
+#start {
+  overflow: hidden;
+  width: 55%;
+  right: 10%;
+  position: relative;
+  top: 30%;
+  left: 10%;
+}
+#start h1 {animation: moveRight 1.5s forwards; }
+#start hr {animation: moveRight 1s forwards; }
+#start p {animation: moveRight 2s forwards; }
+#start a {animation: moveRight 2s forwards; }
+hr {
+  text-align: left;
+  height: 5px;
+  border: none; /* 移除边框可以使hr更加平滑 */
+  background-color: #ffffff; /* 设置背景色 */
+}
+h1{
+  font-size: 60px;
+  color: white;
+}
+h1 strong {
+  font-size: 80px;
+  color: rgb(3, 188, 101);
+}
+#start p {
+  font-size: 20px;
+  color: rgb(190, 190, 190);
+}
+
+/* 以下是p部分 */
+#p1, #p2 {
+  position: relative;
+  top: 50px;
+  height: 700px;
+}
+[id^="p"] img {
+  width: 50%;
+  height: 90%;
+  position: absolute;
+  border-radius: 50px;
+  border: 10px solid skyblue;
+}
+[id^="p"] span {
+  position: relative;
+  top: 30%;
+  width: 40%;
+  position: absolute;
+  font-size: 20px;
+}
+#p1 img {
+  left: 3%;
+}
+#p1 span {
+  right: 3%;
+}
+#p2 img {
+  right: 3%;
+}
+#p2 span {
+  left: 3%;
+}
+#p2 input {
+  width: 50px;
+  height: 20px;
+}
+#p2 a {
+  background-color: skyblue;
+  color: white;
+}
+
+/* 以下是footer的style */
+footer {
+  position: relative;
+  top: 50px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 100px;
+  text-align: center;
+}
+footer a,footer p {
+  color: rgb(131, 131, 131);
+  text-decoration: none;
+  font-size: 15px;
+}
+footer a:hover {
+  color: rgb(0, 0, 0);
+}
+li {
+  list-style: none;
+}
+.left {
+  float: left;
+  width: 20%;
+}
+.middle {
+  float: left;
+  width: 60%;
+}
+.right {
+  float: left;
+  width: 20%;
+}
+
+/* 以下是音乐部分 */
+#song {
+  overflow:hidden;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+audio {
+  width: 100px;
+  height: 100px;
+}
+@media (max-width: 768px) {
+  #ico {
+    position: relative;
+    top: 5px;
+    left: 5%;
+    width: 68px;
+    height: 24px;
+  }
+  #menu {
+    position: relative;
+    top: -13px;
+    margin-right: 5%;
+    float: right;
+  }
+  #menu ul{
+    list-style: none; /* 移除默认列表样式 */
+    padding: 0; /* 移除默认内边距 */
+    margin: 0; /* 移除默认外边距 */
+    display: flex; /* 使用Flexbox布局 */
+  }
+  #menu ul li{
+    display: inline-block;
+    margin-left: 10px;
+  }
+  #menu li .menu {
+    position: relative;
+    top: 40%;
+    text-decoration: none;
+    font-size: 50%;
+  }
+  #login {
+    position: relative;
+    top: 10px;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 3px;
+    font-size: 3px;
+    color: skyblue;
+    border: 3px solid skyblue;
+    background-color: #ddd;
+    /* 下面这个是用来控制圆角的 */
+    border-radius: 50px;
+  }
+  #login:hover {
+    color: #ddd;
+    background-color: skyblue;
+    border: 3px solid white;
+  }
+  h1{
+    font-size: 30px;
+    color: white;
+  }
+  h1 strong {
+    font-size: 45px;
+    color: rgb(3, 188, 101);
+  }
+  #start p {
+    font-size: 15px;
+    color: rgb(190, 190, 190);
+  }
+  /* 以下是p部分 */
+  #p1, #p2 {
+    position: relative;
+    top: 50px;
+    height: 400px;
+  }
+  [id^="p"] img {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    border-radius: 50px;
+    border: 10px solid skyblue;
+  }
+  [id^="p"] span {
+    position: relative;
+    top: 10%;
+    width: 30%;
+    position: absolute;
+    font-size: 10px;
+  }
+  #p1 img {
+    left: 3%;
+  }
+  #p1 span {
+    right: 3%;
+  }
+  #p2 img {
+    right: 3%;
+  }
+  #p2 span {
+    left: 3%;
+  }
+  #p2 input {
+    width: 50px;
+    height: 20px;
+  }
+  #p2 a {
+    background-color: skyblue;
+    color: white;
+  }
+  /* 以下是footer的style */
+footer {
+  position: relative;
+  top: 50px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  padding: 1px 1px;
+  text-align: center;
+}
+footer a,footer p {
+  color: rgb(131, 131, 131);
+  text-decoration: none;
+  font-size: 10px;
+}
+footer a:hover {
+  color: rgb(0, 0, 0);
+}
+li {
+  list-style: none;
+}
+.between {
+  position: relative;
+  left: 35%;
+  width: 100px;
+}
+.right,.left{
+  width: 30%;
+  position: absolute;
+}
+.right {
+  right: 0;
+}
+.left {
+  left: 0;
+}
+}

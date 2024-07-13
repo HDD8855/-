@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- Ctrl+/ : 注释 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8855小镇</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+</head>
+<body>
+  <!-- 登录注册 -->
+  <div id="loginbg"></div>
+  <div class="loginbox">
+    <button class="close" onclick="login_close()">×</button>
+    <form action="./index.html">
+      <h2>账号登录<h2>
+      <div class="loginwrite">
+        <div class="name">
+          <input type="text" placeholder="用户名" class="name">
+        </div>
+        <div class="password">
+          <input type="password" placeholder="密码" class="password">
+        </div>
+      </div>
+      <button id="login_go"><strong>登录</strong></button>
+      <br>
+      <label class="agree"><input type="checkbox">我已同意<a href="#">8855小镇条例</a></label>
+    </form>
+  </div>
+  <!-- 顶部 -->
+    <div id="top">
+      <div>
+        <a href="./index.html"><img id="ico" src="./static/photo/8855.png" alt="8855"></a>
+        <div id="menu">
+          <ul>
+            <li><a class="menu" href="./index.html"><strong>主页</strong></a></li>
+            <li><a class="menu" href="./download.html"><strong>下载页面</strong></a></li>
+            <li><a class="menu" href="./about.html"><strong>关于我们</strong></a></li>
+            <li><a class="menu" href="../index.html"><strong>返回新版</strong></a></li>
+            <li><a class="menu" href="./404.html"><strong></strong></a></li>
+            <li><a class="button" href="javascript:login_open();" id="login">登录/注册</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="start">
+        <h1>欢迎来到 <strong>8855小镇</strong></h1>
+        <hr>
+        <p id="say">这是一个非常和谐的小镇……</p>
+        <a class="button" href="./about.html">了解更多</a>
+      </div>
+    </div>
+    <!-- p1 -->
+    <div id="p1">
+      <img src="./static/photo/givemoney.jpg" alt="山脉">
+      <span>这里有优美的赞赏码……<br>在阳光的映照下，二维码的大大小小，如同仙境般的美景令人叹为观止。<br>景色旖旎，宛如人间仙境，让人流连忘返，赞叹不已。<br>眼前的二维码如同一幅壮美的油画，大气磅礴，令人叹为观止。<br>这片赞赏秀丽，大气磅礴，仿佛是大地的一颗璀璨明珠。山川如画，美不胜收，眼前的二维码让人心旷神怡，仿佛进入了仙境。</span>
+    </div>
+    <!-- p2 -->
+    <div id="p2">
+      <img src="./static/photo/backgroung2.png" alt="山脉">
+      <span>
+        我们甚至可以计算！<br>
+        <input maxlength="50" type="number" id="ride1">×<input maxlength="50" type="number" id="ride2">=<p id="cde"></p>
+        <input maxlength="50" type="number" id="jia1">-<input maxlength="50" type="number" id="jia2">=<p id="jde"></p>
+        <a class="button" href="javascript:ride()">计算</a>
+      </span>
+    </div>
+    <footer>
+      <div id="footer">
+        <div class="left">
+          <ul>
+            <li><a href="./about.html">关于8855小镇</a></li>
+            <li><a href="./404.html">常见问题</a></li>
+            <li><a href="./404.html">商业合作</a></li>
+            <li><a href="./404.html">问题反馈</a></li>
+            <li><a href="../index.html">返回新版</a></li>
+            <li><a href="./404.html"></a></li>
+          </ul>
+        </div>
+        <div class="middle"><p>本网站由8855星泉工作室制作推广<br><strong>站长留言</strong>渣狗别改了，css都出问题了！！！</p></div>
+        <div class="right"><p>本站使用了渣狗的服务器</p></div>
+      </footer>
+  <!-- 歌曲部分 -->
+  <div id="song">
+    <audio controls loop>
+      <source src="./static/song/8855city.mp3" type="audio/mpeg" id="bgsong">
+      浏览器版本过旧，无法播放音乐
+    </audio>
+  </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载主页</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/top.css">
+    <link rel="stylesheet" href="./css/download.css">
+    <script src="./js/top.js"></script>
+</head>
+<body>
+  <!-- 登录注册 -->
+  <div id="loginbg"></div>
+  <div class="loginbox">
+    <button class="close" onclick="login_close()">×</button>
+    <form action="./index.html">
+      <h2>账号登录<h2>
+      <div class="loginwrite">
+        <div class="name">
+          <input type="text" placeholder="用户名" class="name">
+        </div>
+        <div class="password">
+          <input type="password" placeholder="密码" class="password">
+        </div>
+      </div>
+      <button id="login_go"><strong>登录</strong></button>
+      <br>
+      <label class="agree"><input type="checkbox">我已同意<a href="#">8855小镇条例</a></label>
+    </form>
+  </div>
+  <!-- 顶部 -->
+    <div id="top">
+      <div>
+        <a href="./index.html"><img id="ico" src="./static/photo/8855.png" alt="8855"></a>
+        <div id="menu">
+          <ul>
+            <li><a class="menu" href="./index.html"><strong>主页</strong></a></li>
+            <li><a class="menu" href="./download.html"><strong>下载页面</strong></a></li>
+            <li><a class="menu" href="./about.html"><strong>关于我们</strong></a></li>
+            <li><a class="menu" href="./404.html"><strong>在线群聊</strong></a></li>
+            <li><a class="menu" href="./404.html"><strong>QQ/微信</strong></a></li>
+            <li><a class="button" href="javascript:login_open();" id="login">登录/注册</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="thing">
+      <h1>下载主页</h1>
+      <ul>
+        <li><p>8855工作室（又称8855星泉工作室）成立于2018年，开始涉及于线下游戏产业。</p></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+      </ul>
+    </div>
+    <!-- 底部 -->
+    <div id="footer"></div>
+</body>
+</html>
