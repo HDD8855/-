@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- Ctrl+/ : 注释 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星泉小说网</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- 警告！！！以下js为每次重新更新缓存使用！-->
+</head>
+<body>
+  <!-- 登录注册 -->
+  <div id="loginbg"></div>
+  <div class="loginbox">
+    <button class="close" onclick="login_close()">×</button>
+    <form action="./index.html">
+      <h2>账号登录<h2>
+      <div>
+        <input type="text" placeholder="用户名" class="name" name="name">
+        <input type="password" placeholder="密码" class="password" name="password">
+        <button id="login_go"><strong>登录</strong></button>
+      </div>
+    </form>
+  </div>
+  <!-- 顶部 -->
+  <div id="top">
+      <a id="ico" href="javascript:location.reload(true)"><img src="./static/photo/result.png" alt="8855"><h2>星泉小说网</h2></a>
+      <div id="menu">
+        <ul>
+          <li><a class="menu" href="./index.html"><strong>主页</strong></a></li>
+          <li><a class="menu" href="./download.html">书库</a></li>
+          <li><a class="menu" href="./404.html">书友讨论</a></li>
+          <li><a class="menu" href="./404.html">作家专区</a></li>
+          <li><a class="menu" href="./about.html">关于我们</a></li>
+          <li><input type="text" id="search" placeholder="请输入书名或作者"></li>
+          <li class="cut">|</li>
+          <li><a href="javascript:login_open();" id="login">登录</a></li>
+          <li><a href="./register.html" id="register" target="_blank">注册</a></li>
+        </ul>
+      </div>
+  </div>
+  <!-- 头部作品展示 -->
+  <div id="show">
+    <div>
+      <a href="./about.html" target="_blank"><img src="./static/photo/show/1.jpg" alt="展示" id="show_photo"></a>
+      <div id="show_photo_hr"></div>
+    </div>
+    <div id="show_thing">
+      <div>
+        <a href="https://www.17k.com/book/3557980.html" target="_blank">
+          <img src="./static/photo/books/8855760001.jpg" alt="">
+          <h3>卧龙星球</h3>
+          <span>核动豆/著</span>
+        </a>
+      </div>
+      <div>
+        <a href="https://www.17k.com/book/3557980.html" target="_blank">
+          <img src="./static/photo/books/8855760002.jpg" alt="">
+          <h3>卧龙星球</h3>
+          <span>核动豆/著</span>
+        </a>
+      </div>
+      <div>
+        <a href="https://www.17k.com/book/3557980.html" target="_blank">
+          <img src="./static/photo/books/8855760003.jpg" alt="">
+          <h3>卧龙星球</h3>
+          <span>核动豆/著</span>
+        </a>
+      </div>
+      <div>
+        <a href="https://www.17k.com/book/3557306.html" target="_blank">
+          <img src="./static/photo/books/8855760004.jpg" alt="">
+          <h3>李林之末世幸存者</h3>
+          <span>核动豆/著</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- going -->
+  <div id="going">
+    <a href="#" class="going"><span>作家专区</span><strong>></strong><p>为作者专门打造的区域</p></a>
+    <a href="#" class="going"><span>书友讨论</span><strong>></strong><p>为每一个爱看书的人一个可以讨论的地方</p></a>
+    <a href="./about.html" class="going"><span>关于我们</span><strong>></strong><p>关于8855星泉工作室的历程</p></a>
+  </div>
+    <!-- p1 -->
+  <div id="p1">
+    <div id="p1_1">
+      <h2><a href="./about.html">热门小说<strong> ></strong></a></h2>
+      <div class="hotbook">
+        <div>
+          <a href="https://www.17k.com/book/3557980.html" target="_blank">
+            <img src="./static/photo/books/8855760001.jpg" alt="">
+            <h3>卧龙星球</h3>
+            <span>核动豆/著</span>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.17k.com/book/3557980.html" target="_blank">
+            <img src="./static/photo/books/8855760002.jpg" alt="">
+            <h3>卧龙星球</h3>
+            <span>核动豆/著</span>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.17k.com/book/3557980.html" target="_blank">
+            <img src="./static/photo/books/8855760003.jpg" alt="">
+            <h3>卧龙星球</h3>
+            <span>核动豆/著</span>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.17k.com/book/3557306.html" target="_blank">
+            <img src="./static/photo/books/8855760004.jpg" alt="">
+            <h3>李林之末世幸存者</h3>
+            <span>核动豆/著</span>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.17k.com/book/3557306.html" target="_blank">
+            <img src="./static/photo/books/8855760004.jpg" alt="">
+            <h3>李林之末世幸存者</h3>
+            <span>核动豆/著</span>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.17k.com/book/3557306.html" target="_blank">
+            <img src="./static/photo/books/8855760004.jpg" alt="">
+            <h3>李林之末世幸存者</h3>
+            <span>核动豆/著</span>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.17k.com/book/3557306.html" target="_blank">
+            <img src="./static/photo/books/8855760004.jpg" alt="">
+            <h3>李林之末世幸存者</h3>
+            <span>核动豆/著</span>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.17k.com/book/3557980.html" target="_blank">
+            <img src="./static/photo/books/8855760001.jpg" alt="">
+            <h3>卧龙星球</h3>
+            <span>核动豆/著</span>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.17k.com/book/3557980.html" target="_blank">
+            <img src="./static/photo/books/8855760002.jpg" alt="">
+            <h3>卧龙星球</h3>
+            <span>核动豆/著</span>
+          </a>
+        </div>
+        <div>
+          <a href="https://www.17k.com/book/3557980.html" target="_blank">
+            <img src="./static/photo/books/8855760003.jpg" alt="">
+            <h3>卧龙星球</h3>
+            <span>核动豆/著</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- p2 -->
+
+
+  <footer>
+    <div id="footer">
+      <div class="left">
+        <ul>
+          <li><a href="./about.html">关于8855小镇</a></li>
+          <li><a href="./404.html">常见问题</a></li>
+          <li><a href="./404.html">商业合作</a></li>
+          <li><a href="./404.html">问题反馈</a></li>
+          <li><a href="./8855city">返回旧版</a></li>
+        </ul>
+      </div>
+      <div class="middle"><p>本网站由8855星泉工作室制作推广</p></div>
+      <div class="right"><p>本网站暂时属于内测阶段</p></div>
+    </footer>
+
+  <!-- <div id="song">
+    <audio controls loop>
+      <source src="./static/song/8855city.mp3" type="audio/mpeg" id="bgsong">
+      浏览器版本过旧，无法播放音乐
+    </audio>
+  </div> -->
+  <!-- 手机端禁止访问 -->
+  <div id="no_phone_bg"></div>
+  <div id="no_phone_box">
+    <img src="./static/photo/result.png" alt="8855小镇">
+    <h1>网页暂时无法访问</h1>
+    <p>这本网页暂时未开放手机端浏览，请使用电脑端,否则会界面混乱的哦！</p> 
+    <button onclick="no_phone_close();" class="button">我使用的是非手机</button>
+  </div>
+</body>
+<script src="./js/index.js"></script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu_星泉小说网</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/top.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <script src="./js/top.js"></script>
+</head>
+<body>
+    <!-- 登录注册 -->
+    <div id="loginbg"></div>
+    <div class="loginbox">
+      <button class="close" onclick="login_close()">×</button>
+      <form action="./index.html">
+        <h2>账号登录<h2>
+        <div>
+          <input type="text" placeholder="用户名" class="name" name="name">
+          <input type="password" placeholder="密码" class="password" name="password">
+          <button id="login_go"><strong>登录</strong></button>
+        </div>
+      </form>
+    </div>
+    <!-- 顶部 -->
+    <div id="top">
+        <a id="ico" href="./index.html"><img src="./static/photo/result.png" alt="8855"><h2>星泉小说网</h2></a>
+        <div id="menu">
+          <ul>
+            <li><a class="menu" href="./index.html"><strong>主页</strong></a></li>
+            <li><a class="menu" href="./download.html">下载页面</a></li>
+            <li><a class="menu" href="./about.html">关于我们</a></li>
+            <li><a class="menu" href="./404.html">在线群聊</a></li>
+            <li><a class="menu" href="./404.html">QQ/微信</a></li>
+            <li><input type="text" id="search" placeholder="请输入书名或作者"></li>
+            <li class="cut">|</li>
+            <li><a href="javascript:login_open();" id="login">登录</a></li>
+            <li><a href="./register.html" id="register" target="_blank">注册</a></li>
+          </ul>
+        </div>
+    </div>
+
+  <div id="thing">
+    <h1></h1>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <!-- 底部 -->
+  <div id="footer"></div>
+</body>
+</html>
