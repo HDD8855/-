@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+#loginbg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.loginbox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.loginbox h2 {
+    margin-bottom: 10px;
+}
+
+.loginbox input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.loginbox button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#top {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+#top a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#top ul {
+    list-style-type: none;
+}
+
+#top ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#show {
+    padding: 20px;
+}
+
+#show_photo {
+    width: 100%;
+}
+
+#show_photo_hr {
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+#show_thing div {
+    float: left;
+    margin-right: 20px;
+}
+
+#going a {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+#p1 {
+    padding: 20px;
+}
+
+#p1 h2 {
+    margin-bottom: 10px;
+}
+
+.hotbook div {
+    float: left;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+#no_phone_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+#no_phone_box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+}
+
+#no_phone_box h1 {
+    margin-bottom: 10px;
+}
+
+#no_phone_box p {
+    margin-bottom: 10px;
+}
+
+#no_phone_box button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
